@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+element.style {
+    margin-bottom: 0px;
+}
+.cabin {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.9rem;
+
+    font-variation-settings: "width" 100;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #082f49;
+}
+.calculator-body {
+    height: 45vw;
+    min-width: 300px;
+    min-height: 450px;
+    width: 30vw;
+    background-color: #caf0f8;
+    border: 2px solid #014f86;
+    border-radius: 1em;
+    margin: 0 !important;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.result-part {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #a9d6e5;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.expression {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px dotted #14213d;
+    flex-direction: row-reverse;
+    padding-top: 10%;
+    opacity: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.result-text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 60%;
+    width: 100%;
+    opacity: 95%;
+}
+.calc-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 70%;
+    width: 100%;
+    padding: 0.5vw 0.5vw;
+    color: white;
+}
+.button {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    /* font-size: 1vh; */
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #90e0ef;
+    padding: 2vw;
+}
+.spl-button {
+    background-color: #00b4d8;
+}
+.button:hover {
+    background-color: #0895b85c;
+    box-shadow: white;
+    text-shadow: white;
+    color: #14213d;
+    border: 1pt solid #14213d;
+}
